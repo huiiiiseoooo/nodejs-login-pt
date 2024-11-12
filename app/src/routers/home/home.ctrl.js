@@ -1,16 +1,23 @@
 "use strict"
 
-
-
-const home = (req, res)=>{
-    res.send("여기는 루트입니다");
+const output = {
+    home: (req, res)=>{
+        res.send("여기는 루트입니다");
+    },
+    
+    login: (req, res) => {
+        res.render("home/login");
+    },
 };
 
-const login = (req, res) => {
-    res.render("home/login");
+const process = {
+    login: (req, res)=>{
+        console.log(req.body);
+    },
 };
+
 
 module.exports = {
-    home,
-    login
+    output,
+    process
 };
