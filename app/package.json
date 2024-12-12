@@ -1,17 +1,18 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "main": "nodetest.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon ./bin/www.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/www.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
   },
   "bin": {
     "nodejs": "bin/www.js"
